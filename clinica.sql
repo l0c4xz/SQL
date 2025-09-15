@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/09/2025 às 15:42
+-- Tempo de geração: 15/09/2025 às 19:06
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -48,6 +48,13 @@ CREATE TABLE `medico` (
   `telefone` varchar(20) DEFAULT NULL,
   `crm` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `medico`
+--
+
+INSERT INTO `medico` (`id`, `nome`, `especialidade`, `telefone`, `crm`) VALUES
+(1, 'Dr. Carlos Souza', 'Cardiologista', '1111-2222', 'CRM12345');
 
 -- --------------------------------------------------------
 
@@ -103,7 +110,7 @@ ALTER TABLE `consulta`
 -- AUTO_INCREMENT de tabela `medico`
 --
 ALTER TABLE `medico`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `paciente`
